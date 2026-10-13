@@ -1,1 +1,21 @@
+footer a:hover {
+    color: #BDECF0;
+}
 
+/* Mobile-friendly design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .intro,
+    .beach,
+    .colors {
+        padding: 16px;
+    }
+}
