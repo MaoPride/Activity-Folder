@@ -167,3 +167,11 @@ footer a {
         padding: 0 15px;
     }
 }
+.card {
+  background-color: #F7F5FB;
+  border: 3px solid navy;
+  box-sizing: border-box;
+  margin: 0 auto 24px;
+  padding: 10px 30px;
+  width: 400px;
+}
