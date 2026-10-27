@@ -25,4 +25,11 @@ h3{
     border-bottom: 2px solid #ccc;
     background-color: #f2f2f2;
 }
+footer{
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--white);
+  background: var(--deep-ocean);
+  font-size: .9rem;
+}
 
