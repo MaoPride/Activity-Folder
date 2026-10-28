@@ -1,176 +1,27 @@
-/* One shared stylesheet for all six pages */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff4df;
-    color: #294b45;
-    line-height: 1.7;
-    background-image: url("https://www.transparenttextures.com/patterns/palm-leaf.png");
-}
-
-/* top of the page */
-header {
-    background-color: #68c7c1;
+.body{
+    font-family: Arial, sans-serif;
+    background-color: lightyellow;
     text-align: center;
-    padding: 35px 15px;
-    border-bottom: 6px solid #f2c078;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }
 
-header p {
-    color: #fffdf3;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 42px;
-    margin: 5px;
-    text-shadow: 2px 3px #438d83;
-    transform: rotate(-1deg);
-}
-
-header h2 {
-    color: #fff8e8;
-    font-size: 19px;
-    font-weight: normal;
-}
-
-/* navigation links */
-nav {
-    background-color: #f4d39b;
-    text-align: center;
-    padding: 15px 8px;
-    border-bottom: 2px dashed #c99557;
-}
-
-nav a {
-    display: inline-block;
-    color: #315d50;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 3px;
-    background-color: #fff9e9;
-    border-radius: 12px 5px 14px 6px;
-    font-size: 14px;
-}
-
-nav a:hover {
-    background-color: #76cbc1;
+.h1{
+    background-color: brown;
     color: white;
-    transform: rotate(-2deg);
-}
-
-/* main page */
-main {
-    max-width: 950px;
-    margin: 30px auto;
     padding: 20px;
-    background-color: #fffaf0;
-    border: 2px solid #ead4a9;
-    border-radius: 20px 8px 22px 10px;
-    box-shadow: 5px 6px 0 #e7c995;
 }
 
-/* headings */
-h2 {
-    color: #258b83;
-    font-size: 26px;
+.meny{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 15px;
 }
 
-h2::before {
-    content: "🌴 ";
+.menu div{
+    background-color: orange;
+    padding: 25px;
 }
 
-h3 {
-    color: #bf7749;
-}
-
-/* island introduction */
-main > p {
-    background-color: #e0f4e9;
-    padding: 15px;
-    border-left: 5px solid #64b8a5;
-    border-radius: 5px 15px 7px 12px;
-}
-
-/* destination list */
-ul {
-    background-color: #fff0d2;
-    padding: 20px 20px 20px 40px;
-    border: 2px dashed #e5bd79;
-    border-radius: 15px 5px 18px 8px;
-}
-
-li {
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-li::marker {
-    color: #d68d52;
-}
-
-/* little hover effect */
-li:hover {
-    color: #168c85;
-}
-
-/* travel with respect section */
-section {
-    margin: 30px 0;
-    padding: 15px;
-}
-
-section:last-of-type {
-    background-color: #dff2df;
-    border-radius: 5px 20px 8px 18px;
-    border: 2px dashed #86b99a;
-    transform: rotate(0.5deg);
-}
-
-/* bottom of the page */
-footer {
-    background-color: #347e70;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 40px;
-    border-top: 6px solid #f2c078;
-}
-
-footer p {
-    margin: 5px;
-    font-size: 14px;
-}
-
-/* phone screen */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    header {
-        padding: 25px 10px;
-    }
-
-    nav a {
-        display: block;
-        margin: 8px auto;
-        max-width: 230px;
-    }
-
-    main {
-        margin: 15px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
+.menu.special{
+    grid-column: span 3;
+    background-color: lightgreen
 }
