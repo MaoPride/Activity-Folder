@@ -1,0 +1,27 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.h1{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+
+.meny{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.menu div{
+    background-color: orange;
+    padding: 25px;
+}
+
+.menu.special{
+    grid-column: span 3;
+    background-color: lightgreen
+}
