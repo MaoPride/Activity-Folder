@@ -1,27 +1,144 @@
-.body{
+
+/* My restaurant page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: lightyellow;
+    background-color: #fff7e8;
+    color: #49352a;
+}
+
+header {
+    background-color: #8c3b2e;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 8px 12px;
+    background-color: #ad6047;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #e8b66a;
+    color: #49352a;
+}
+
+.welcome {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9dfb4;
+}
+
+.menu-title {
+    text-align: center;
+    margin-top: 35px;
+    color: #8c3b2e;
+}
+
+/* Challenge 1 and 2: Three columns and spacing */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Challenge 3: The chef's special */
+
+.special {
+    grid-column: span 3;
+    background-color: #f4bd60;
+    padding: 25px;
+    text-align: center;
+    border: 3px dashed #8c3b2e;
+    border-radius: 12px;
+}
+
+/* Regular food items */
+
+.food {
+    background-color: #f4d7c5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #e5b59d;
+}
+
+.food h3,
+.special h3 {
+    color: #753729;
+}
+
+.food p,
+.special p {
+    line-height: 1.5;
+}
+
+.food:hover {
+    background-color: #f6c8a9;
+}
+
+/* About section */
+
+.about {
+    background-color: #e7edda;
+    margin: 25px 20px;
+    padding: 25px;
+    border-radius: 12px;
     text-align: center;
 }
 
-.h1{
-    background-color: brown;
+/* Footer */
+
+footer {
+    background-color: #8c3b2e;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
 
-.meny{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 150px;
+/* Make the menu easier to use on phones */
+
+@media (max-width: 650px) {
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .special {
+        grid-column: span 2;
+    }
 }
 
-.menu div{
-    background-color: orange;
-    padding: 25px;
-}
+@media (max-width: 420px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
 
-.menu.special{
-    grid-column: span 3;
-    background-color: lightgreen
+    .special {
+        grid-column: span 1;
+    }
 }
