@@ -15,7 +15,8 @@ header h1 {
 }
 nav {
     display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
+     flex-direction: column;
 }
 nav a {
     
@@ -43,17 +44,21 @@ nav a:hover {
 .parent {
     padding: 5px;
     color: brown;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
 
 }
-.card {
-    flex: 0 0 25%;
+main {
+    grid-column: 2/3;
+    display: flex;
    box-sizing: border-box;
     border: thin solid black;
     margin: 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .footer-link {
     display: grid;
@@ -67,4 +72,21 @@ justify-content: space-evenly;
 .footer-link a {
     display: block;
     color: rgb(38, 39, 36)
+}
+
+.photo-card {
+    display: block;
+    box-sizing: border-box;
+    border: thin solid black;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 30%;
+    
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
