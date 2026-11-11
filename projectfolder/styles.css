@@ -1,0 +1,15 @@
+body {
+    font-family: oswald;
+}
+
+header h1{
+    color: black;
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border:solid blue;
+    border-radius: 20px;
+    padding:20px;
+    text-align: center;
+    
+}
