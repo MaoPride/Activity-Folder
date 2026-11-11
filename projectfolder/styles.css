@@ -1,30 +1,131 @@
-body {
-    font-family: oswald;
-}
+{
+      box-sizing: border-box;
+    }
 
-header h1{
-    color: black;
-    background-color: lightblue;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    border:solid blue;
-    border-radius: 20px;
-    padding:20px;
-    text-align: center;
-    
-}
+    body {
+      margin: 0;
+      background-color: #f3f1eb;
+      color: #292929;
+      font-family: "Open Sans", sans-serif;
+    }
 
-figure {
-    float: right;
-    margin: 0;
-    width: 220px;
-  }
+    .wrapper {
+      width: 860px;
+      max-width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
 
-  figure img {
-    width: 100%;
-    height: auto;
-  }
+    header {
+      padding: 2.5rem 1rem;
+      border: 1px solid #d2c6ad;
+      border-radius: 0 0 12px 12px;
+      background-image:
+        linear-gradient(rgba(25, 35, 40, 0.55), rgba(25, 35, 40, 0.55)),
+        url("header.jpg");
+      background-size: cover;
+      background-origin: border-box;
+      background-clip: border-box;
+      color: white;
+      text-align: center;
+    }
 
-  figcaption {
-    font-size: 0;
-  }
+    h1,
+    h2 {
+      font-family: "Merriweather", serif;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 5px #222;
+    }
+
+    nav {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #344b45;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 0.75rem;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #f4d58d;
+      text-decoration: underline;
+    }
+
+    main {
+      min-height: 320px;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border: 1px solid #ddd5c5;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    figure {
+      float: right;
+      width: 230px;
+      margin: 0 0 1rem 1.25rem;
+      padding: 0.5rem;
+      border: 1px solid #d2c6ad;
+      border-radius: 8px;
+      background-color: #faf8f2;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 170px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding-top: 0.5rem;
+      font-size: 0.85rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border-left: 4px solid #758c66;
+      background-color: #f5f5ef;
+      font-family: "Merriweather", serif;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    blockquote p {
+      margin: 0 0 0.5rem;
+    }
+
+    footer {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 8px 8px 0 0;
+      background-color: #344b45;
+      color: white;
+      text-align: center;
+    }
